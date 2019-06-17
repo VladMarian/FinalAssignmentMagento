@@ -1,0 +1,2 @@
+2019-06-16T20:01:35+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-06-16T20:01:35+00:00 DEBUG (7): Security problem: blog/post_list_recent has not been whitelisted.

@@ -1,0 +1,20 @@
+2019-06-16T20:01:32+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Mage_Megamenupro_Block_Megamenupro' in /srv/http/app/Mage.php:598
+Stack trace:
+#0 /srv/http/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /srv/http/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('megamenupro/meg...', Array)
+#2 /srv/http/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('megamenupro/meg...', '3c5a973334c3d4e...')
+#3 /srv/http/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('megamenupro/meg...', '3c5a973334c3d4e...')
+#4 /srv/http/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /srv/http/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /srv/http/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /srv/http/app/code/core/Mage/Cms/Helper/Page.php(113): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /srv/http/app/code/core/Mage/Cms/Helper/Page.php(52): Mage_Cms_Helper_Page->_renderPage(Object(Mage_Cms_IndexController), 'home')
+#9 /srv/http/app/code/core/Mage/Cms/controllers/IndexController.php(45): Mage_Cms_Helper_Page->renderPage(Object(Mage_Cms_IndexController), 'home')
+#10 /srv/http/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Cms_IndexController->indexAction()
+#11 /srv/http/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#12 /srv/http/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /srv/http/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /srv/http/app/Mage.php(687): Mage_Core_Model_App->run(Array)
+#15 /srv/http/index.php(83): Mage::run('', 'store')
+#16 {main}
