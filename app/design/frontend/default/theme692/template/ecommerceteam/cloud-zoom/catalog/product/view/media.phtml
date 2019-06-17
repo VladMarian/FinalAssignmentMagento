@@ -72,10 +72,14 @@ if ($zoomHeight) {
 
 <div class="product-box-customs">
     <?php if ($product->getImage() != 'no_selection' && $product->getImage()): ?>
-    
+
+    <?php if ($product -> getSale()): ?>
+        <span class="discount-badge">
+	        <?php echo Mage::helper('discounthelper') -> calcDiscount($product -> getPrice(), $product -> getFinalPrice()); ?>
+        </span>
+    <?php endif; ?>
     <p class="product-image">
         <a  href='<?php echo $this->helper('catalog/image')->init($product, 'image')->resize($bigImageWidth, $bigImageHeight);?>' class = 'cloud-zoom' id='zoom1' rel="<?php echo implode($config, ',');?>">
-            
             <img class="big" id="image" src="<?php echo $this->helper('catalog/image')->init($product, 'image')->resize($bigImageX, $bigImageY);?>" alt='' title="<?php echo $this->htmlEscape($this->getImageLabel());?>" />
         </a>
     </p>

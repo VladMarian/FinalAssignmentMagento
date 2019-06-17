@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Examen_DiscountBanner>
+			<version>0.1.0</version>
+		</Examen_DiscountBanner>
+	</modules>
+	<global>
+		<helpers>
+			<discounthelper>
+				<class>Examen_DiscountBanner_Helper</class>
+			</discounthelper>
+		</helpers>
+	</global>
+</config>

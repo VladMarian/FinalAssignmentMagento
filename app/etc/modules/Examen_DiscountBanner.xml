@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<Examen_DiscountBanner>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Examen_DiscountBanner>
+	</modules>
+</config>

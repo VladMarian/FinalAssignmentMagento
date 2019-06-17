@@ -32,4 +32,15 @@ p {margin: 0;}
     }
 }
 
-
+.discount-badge {
+	font-size: 13px;
+	text-transform: capitalize;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	color: #fff;
+	padding: 2px 8px 4px;
+	background-color: #73d5c9;
+	z-index: 100;
+}
